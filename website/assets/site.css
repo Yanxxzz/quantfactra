@@ -324,3 +324,39 @@ tbody tr:hover { background:var(--soft); }
 .case-label { font-size:9px; padding:4px 8px; color:#936536; background:#f4ece3; border:1px solid #dac9b6; border-radius:3px; }
 .comparison-note { margin-top:20px; line-height:1.9; }
 @media(max-width:760px) { .case-pair { grid-template-columns:1fr; } .cases-section { padding-block:52px; } .case-choice { padding:24px; } .case-choice h3 { font-size:23px; } .case-choice .case-metric strong { font-size:36px; } }
+
+/* Lead with the approved research result; keep its scope beside the return. */
+.hero-results { grid-template-columns:1.05fr 1fr; gap:48px; padding-block:44px 52px; scroll-margin-top:20px; }
+.hero-results .hero-eyebrow { margin-top:26px; }
+.hero-results h1 { font-size:clamp(28px,2.7vw,38px); letter-spacing:-.04em; line-height:1.4; }
+.hero-performance { margin-top:20px; }
+.hero-return { display:block; font:600 clamp(68px,7.5vw,108px)/1.05 Consolas,"Liberation Mono",monospace; color:var(--mint); letter-spacing:-.065em; white-space:nowrap; }
+.hero-return>span { font-size:.62em; margin-left:4px; letter-spacing:-.04em; }
+.hero-return-label { display:block; color:#d1e1d5; font-size:13px; margin-top:9px; }
+.hero-period { color:#a7bdaf; font-size:11px; margin-top:15px; }
+.hero-drawdown { display:flex; align-items:baseline; flex-wrap:wrap; gap:5px 12px; margin-top:9px; color:#a7bdaf; font-size:11px; }
+.hero-drawdown strong { font:600 20px/1.4 Consolas,monospace; color:#edf6ed; }
+.hero-drawdown>span { padding-left:12px; border-left:1px solid #4a6152; }
+.hero-results .hero-copy { font-size:14px; line-height:1.9; margin-top:19px; }
+.hero-results .actions { margin-top:23px; }
+.hero-results .hero-note { margin-top:16px; }
+.hero-results .visual-index { font-size:9px; flex-wrap:wrap; gap:5px 15px; }
+.hero-results .preview-risk { font-size:11px; }
+@media(max-width:1000px) {
+  .hero-results { gap:30px; }
+  .hero-results h1 { font-size:29px; }
+  .hero-results .release-link { font-size:9px; }
+  .hero-return { font-size:76px; }
+}
+@media(max-width:640px) {
+  .hero-results { grid-template-columns:1fr; padding-block:30px 40px; gap:32px; }
+  .hero-results h1 { font-size:clamp(25px,7vw,32px); }
+  .hero-results .hero-eyebrow { font-size:10px; letter-spacing:.04em; margin-top:24px; }
+  .hero-return { font-size:clamp(68px,18vw,92px); }
+  .hero-return-label { font-size:12px; }
+  .hero-results .hero-copy { font-size:13px; }
+  .hero-results .hero-visual { width:100%; }
+  .hero-results .visual-index { font-size:8px; }
+  .hero-results .research-preview { padding-inline:18px; }
+  .hero-results .research-preview h2 { font-size:22px; }
+}
