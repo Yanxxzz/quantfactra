@@ -52,7 +52,7 @@
     },
     "README.md": {
       "classification": "documentation",
-      "sha256": "07612183d4b49c4c14b237351538db8adf4c82e6941c2e53320392c81e69ba6b"
+      "sha256": "609d1a56496f8ae2f250c832ea909469d979567c2f5ebb680cd4367567d53db6"
     },
     "README_EN.md": {
       "classification": "documentation",
@@ -512,7 +512,7 @@
     },
     "website/assets/site.css": {
       "classification": "site_asset",
-      "sha256": "4cabb4b2ca8ee6b0b75020425698191e2f83665d2b45e31eece1dd85d6631ea5"
+      "sha256": "0be05fe3a7ceb0bd763a80a08ff819cf2185c20456aa2f2d39f8b140ddaa4cb6"
     },
     "website/assets/site.js": {
       "classification": "site_asset",
@@ -532,7 +532,7 @@
     },
     "website/index.html": {
       "classification": "site_asset",
-      "sha256": "f807b2e05e2ff828190f7104832154cdbbf36de3c0dfb40b78f377c686a56aa5"
+      "sha256": "3f142ced0fdf5aeebc9f8a436fc4609e46620e84cdac6ab9a7441daa381ada7e"
     },
     "website/momentum.html": {
       "classification": "site_asset",
