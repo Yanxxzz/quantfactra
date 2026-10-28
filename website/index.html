@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>QuantFactra · 让量化研究，有据可循</title>
+  <meta name="description" content="面向 AI 开发者的多 Agent 研究框架。连接 PandaAI、bt 或自定义回测平台，保留实验与证据，从一个可复现的公开案例开始。">
+  <link rel="canonical" href="@@SITE@@"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website"><meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="QuantFactra · 让量化研究，有据可循">
+  <meta property="og:description" content="用你的 AI，接你的回测平台。从因子想法到复现报告，保留每一步证据。">
+  <meta property="og:url" content="@@SITE@@"><meta property="og:image" content="@@SITE@@assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"QuantFactra","description":"Reproducible quantitative factor research and backtesting for AI developers","codeRepository":"@@REPO@@","url":"@@SITE@@","programmingLanguage":"Python","version":"@@VERSION@@","license":"https://opensource.org/license/mit"}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="nav-shell"><nav class="nav wrap" aria-label="主导航">
+  <a class="brand" href="./"><img src="assets/favicon.svg" width="32" height="32" alt="">QuantFactra<span class="version">OPEN SOURCE</span></a>
+  <div class="nav-tools">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>导航 <span aria-hidden="true">＋</span></button>
+    <div class="nav-links" id="nav-links"><a href="#workflow">工作流</a><a href="#cases">公开案例</a><a href="@@REPO@@/blob/master/docs/quickstart.md">文档 ↗</a><a class="nav-github" href="@@REPO@@">GitHub <span aria-hidden="true">↗</span></a></div>
+    <button class="theme" type="button" aria-label="切换深浅主题" title="切换深浅主题"><span aria-hidden="true">◐</span></button>
+  </div>
+</nav></header>
+<main id="main">
+  <div class="hero-shell">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <a class="release-link" href="@@REPO@@/releases/latest"><span class="live-dot"></span>v@@VERSION@@ 已发布<span class="release-divider">/</span>从第一个研究案例开始<span aria-hidden="true">↗</span></a>
+        <div class="eyebrow hero-eyebrow">AN OPEN WORKFLOW FOR RESEARCH AGENTS</div>
+        <h1 id="hero-title">让量化研究，<br><em>有据可循。</em></h1>
+        <p class="hero-copy">用你的 AI，接你的回测平台。<br>从因子想法到复现报告，保留每一步证据。</p>
+        <p class="hero-audience">为搭建、修改量化研究 Agent 的开发者而作。</p>
+        <div class="actions"><a class="button primary" href="#start">开始本地研究 <span aria-hidden="true">↗</span></a><a class="button hero-secondary" href="#cases">查看两个案例 <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span>MIT 开源</span><span>首个案例无需账户或模型 key</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-index"><span>RESEARCH NOTE / 002</span><span>FRENCH × MOM</span></div>
+        <a class="research-preview" href="momentum/" aria-label="打开经典动量因子历史复现案例">
+          <div class="preview-top"><span class="file-mark" aria-hidden="true">QF /</span><span class="record-state"><span></span>已保存的公开结果</span></div>
+          <h2>公开的经典因子，<br>长期溢价存在吗？</h2>
+          <p class="preview-subtitle">US MOMENTUM / 12–2 · 1927—2016</p>
+          <img class="preview-chart" src="assets/french-momentum.svg" width="1080" height="660" alt="已发表动量因子的研究指数与回撤，包含两档固定月度扣减">
+          <div class="preview-result"><div><span>研究指数年化 · 原始毛收益</span><strong>@@MOM_CAGR@@</strong></div><span class="result-tag positive">历史长期为正</span></div><p class="preview-risk">最大回撤 @@MOM_DRAWDOWN@@ · 组合收益级复现，非实盘业绩</p>
+          <div class="preview-footer"><span>90 年 · 1,080 个月 · 完整风险</span><span>展开研究记录 ↗</span></div>
+        </a>
+        <div class="visual-caption"><span class="caption-rule"></span>已知经典因子 · 公开来源 · 收益与风险</div>
+      </div>
+    </section>
+    <div class="hero-baseline wrap"><span>BUILD RESEARCH AGENTS. KEEP THE EVIDENCE.</span><a href="#workflow">探索工作流 <span aria-hidden="true">↓</span></a></div>
+  </div>
+  <section class="integration-strip" aria-label="平台与模型接口"><div class="wrap integrations">
+    <div class="integration-intro">工具由你选择。<br><span>研究过程保持连贯。</span></div>
+    <div class="integration-group"><span class="integration-label">回测平台</span><div><b>PandaAI</b><b>bt</b><a href="@@REPO@@/blob/master/docs/backends.md">你的平台 <span>＋</span></a></div></div>
+    <div class="integration-group"><span class="integration-label">模型协议</span><div><b>Responses</b><b>Chat Completions</b><b>Anthropic Messages</b></div></div>
+  </div></section>
+  <section class="wrap value-section" aria-labelledby="value-title">
+    <div class="section-head"><div><div class="eyebrow">01 / BUILT FOR BUILDERS</div><h2 id="value-title">从一个想法开始。<br>把过程留给下一次研究。</h2></div><p class="section-summary">模型、数据、平台可以不同。<br>一个研究，应该有完整的来路。</p></div>
+    <p class="caption">公开版本仅包含通用框架、接口、合成演练和明确可公开的经典示例。个人策略、研究记忆、账户与运行数据由各自的私有应用提供。</p>
+    <div class="feature-grid">
+      <article class="feature"><div class="feature-top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="3" width="20" height="26" rx="3"/><path d="M11 10h10M11 15h10M11 21h5m3 0 2 2 4-5"/></svg><span class="number">01 — REPRODUCE</span></div><h3>先打开一份真实报告</h3><p>ECB 示例数据随包附带，安装后可断网复现。对照原数据、固定规则与全部成本路径。</p><a href="case/" class="text-link">查看公开案例 <span aria-hidden="true">↗</span></a></article>
+      <article class="feature"><div class="feature-top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="11" y="11" width="10" height="10" rx="2"/><path d="M16 3v8m0 10v8M3 16h8m10 0h8M6 6l5 5m10 10 5 5M26 6l-5 5M11 21l-5 5"/></svg><span class="number">02 — CONNECT</span></div><h3>换成你熟悉的工具</h3><p>PandaAI、真实 bt 引擎与自定义平台共用适配接口。AI 通过协议或已有 Agent 接入。</p><a href="@@REPO@@/blob/master/docs/backends.md" class="text-link">理解适配接口 <span aria-hidden="true">↗</span></a></article>
+      <article class="feature"><div class="feature-top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 10a11 11 0 1 1-1 11M6 3v7h7m3-3v9l6 3"/></svg><span class="number">03 — CONTINUE</span></div><h3>接着原来的实验继续</h3><p>保留原 Run、费用、报告与失败记录。中断恢复后，仍能追溯同一个研究的过程。</p><a href="@@REPO@@/blob/master/docs/quickstart.md" class="text-link">运行与恢复 <span aria-hidden="true">↗</span></a></article>
+    </div>
+  </section>
+  <section class="workflow-section" id="workflow" aria-labelledby="architecture-title"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">02 / THE BIG PICTURE</div><h2 id="architecture-title">一眼看懂，<br>你的 Agent 在哪里工作。</h2></div><a class="button secondary" href="architecture/">探索交互架构 <span aria-hidden="true">↗</span></a></div>
+    <div class="workflow-layout"><div class="workflow-notes"><article><span class="step-index">A</span><h3>想法与数据进入</h3><p>AI 提出研究假设，数据与本地核算提供输入。</p></article><article><span class="step-index">B</span><h3>工作流连接过程</h3><p>固定定义，记录任务与费用，保留报告和独立复核证据。</p></article><article><span class="step-index">C</span><h3>适配器连接执行</h3><p>按平台自己的语言回测，再把结果带回同一个实验。</p></article></div><div class="diagram-card"><div class="diagram-caption"><span>QUANTFACTRA / SYSTEM MAP</span><a href="architecture/">交互版 ↗</a></div><img src="assets/quantfactra-architecture.svg" width="940" height="628" alt="AI 与数据进入研究工作流，工作流管理实验记录和检查，通过适配器连接 PandaAI、bt 或自定义平台" loading="lazy"></div></div>
+    <p class="caption workflow-caption">平台按配置选择。模型协议已用本地服务测试；真实供应商账户、模型输出质量与新平台需要分别验收。</p>
+  </div></section>
+  <section class="wrap cases-section" id="cases" aria-labelledby="case-title">
+    <div class="section-head"><div><div class="eyebrow">03 / TWO CASES. OPEN EVIDENCE.</div><h2 id="case-title">正收益与失败假说，<br>都交给证据说话。</h2></div><p class="section-summary">从一份公开结果出发，<br>理解如何复现和核对研究。</p></div>
+    <div class="case-pair">
+      <article class="case-choice"><div class="evidence-title"><span>CASE 02 / PUBLISHED MOMENTUM</span><span class="case-label positive">历史长期为正</span></div><h3>经典美股 12–2 动量</h3><p>复现 Kenneth French 发布的多空因子收益。定义已公开，保留完整 90 年、后发表区间与扣减敏感性。</p><div class="case-metric"><strong>@@MOM_CAGR@@</strong><span>研究指数年化 · 毛收益<br>1927—2016</span></div><p class="case-risk">最大回撤 <b>@@MOM_DRAWDOWN@@</b></p><p class="caption">组合收益级复现；200% 总名义敞口。固定月度扣减不等于实际交易费，未重建个股交易。</p><a class="button primary" href="momentum/">查看正收益与完整风险 <span aria-hidden="true">↗</span></a></article>
+      <article class="case-choice"><div class="evidence-title"><span>CASE 01 / ECB × bt</span><span class="case-label">假说未获支持</span></div><h3>四币种 20 日动量</h3><p>公开 ECB 数据驱动真实 bt 引擎。固定规则下没有超过等权，完整保留六条路径和费用处理修订。</p><div class="case-metric"><strong>@@EXCESS_PP@@<small>pp</small></strong><span>相对等权净总回报差<br>2012—2016 · 单边 10 bps</span></div><p class="case-risk"><b>6</b> 条完整对照 · <b>@@REBALANCE_DATES@@</b> 次调仓</p><p class="caption">以参考汇率假设成交，未计利息或 carry。原 V1 记录与 V2 费用备付修订都保留。</p><a class="button secondary" href="case/">查看完整执行与失败记录 <span aria-hidden="true">↗</span></a></article>
+    </div><p class="caption comparison-note">两例的资产、周期、敞口、基准与成本不同，用于比较研究方法和证据，不是同一策略优化前后的收益对照。</p>
+  </section>
+  <section class="start-section" id="start" aria-labelledby="start-title"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">04 / YOUR FIRST RUN</div><h2 id="start-title">第一份研究报告，<br>从这里开始。</h2></div><a class="text-link" href="@@REPO@@/blob/master/docs/quickstart.md">完整上手指南 ↗</a></div>
+    <div class="start-grid"><div class="steps"><article><span>1</span><div><h3>准备 Python 3.11 / 3.12</h3><p>使用独立虚拟环境。首次安装需要网络，案例数据已经随包提供。</p></div></article><article><span>2</span><div><h3>运行案例，打开报告</h3><p>打开 <code>research_runs/fx_case/report.html</code>，查看真实结果和全部对照。</p></div></article><article><span>3</span><div><h3>恢复，或开始自己的研究</h3><p>加 <code>--resume</code> 读取原 Run；用 <code>quantfactra init</code> 生成可修改的接入起点。</p></div></article></div>
+      <div class="terminal"><div class="terminal-label"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>quantfactra / first-run</span><span>PYTHON</span></div><div class="terminal-head"><div class="tabs" role="tablist" aria-label="终端系统"><button type="button" role="tab" id="tab-unix" aria-selected="true" aria-controls="code-unix" data-tab="unix">macOS / Linux</button><button type="button" role="tab" id="tab-windows" aria-selected="false" aria-controls="code-windows" data-tab="windows" tabindex="-1">PowerShell</button></div><button class="copy" type="button" data-copy="active">复制命令</button></div>
+<pre id="code-unix" role="tabpanel" aria-labelledby="tab-unix" tabindex="0"><code>git clone @@REPO@@.git
+cd quantfactra
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[bt]"
+python -m quantfactra case --output research_runs/fx_case</code></pre>
+<pre id="code-windows" role="tabpanel" aria-labelledby="tab-windows" tabindex="0" hidden><code>git clone @@REPO@@.git
+cd quantfactra
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[bt]"
+.\.venv\Scripts\python.exe -m quantfactra case --output research_runs/fx_case</code></pre>
+      <div class="terminal-foot"><span class="live-dot"></span><span data-copy-status role="status" aria-live="polite">无需 PandaAI 账户或真实模型调用。</span></div></div>
+    </div>
+    <p class="download-note">想先看看？<a href="@@REPO@@/releases/download/v@@VERSION@@/quantfactra-@@VERSION@@-demo.zip">下载离线演示包 ↓</a><span>·</span><a href="@@REPO@@/releases/latest">正式 Release</a><span>·</span><a href="@@REPO@@/blob/master/README_EN.md">English README</a></p>
+  </div></section>
+  <section class="wrap extend-section" aria-labelledby="extend-title"><div class="section-head"><div><div class="eyebrow">05 / MAKE IT YOURS</div><h2 id="extend-title">然后，把它变成你的工具。</h2></div></div><div class="guide-grid">
+    <a href="@@REPO@@/blob/master/docs/bt-backend.md"><span class="guide-number">01 / DATA</span><h3>接自己的回测数据</h3><p>从真实 bt 适配器和价格表开始。</p><span class="guide-arrow" aria-hidden="true">↗</span></a>
+    <a href="@@REPO@@/blob/master/docs/model-providers.md"><span class="guide-number">02 / AI</span><h3>接入自己的 AI</h3><p>配置模型、讨论案例、连接任务。</p><span class="guide-arrow" aria-hidden="true">↗</span></a>
+    <a href="@@REPO@@/blob/master/docs/backends.md"><span class="guide-number">03 / PLATFORM</span><h3>实现一个新平台</h3><p>沿八方法合同接入自己的服务。</p><span class="guide-arrow" aria-hidden="true">↗</span></a>
+    <a href="@@REPO@@/blob/master/CONTRIBUTING.md"><span class="guide-number">04 / COMMUNITY</span><h3>一起完善项目</h3><p>反馈卡点，贡献文档或适配器。</p><span class="guide-arrow" aria-hidden="true">↗</span></a>
+  </div></section>
+  <section class="closing"><div class="wrap closing-inner"><div><div class="eyebrow">OPEN SOURCE. OPEN QUESTIONS.</div><h2>下一个好问题，<br>从你的研究开始。</h2><p>如果它对你有帮助，欢迎留下反馈或 Star。</p></div><a class="button primary" href="@@REPO@@">在 GitHub 一起构建 <span aria-hidden="true">↗</span></a><span class="closing-watermark" aria-hidden="true">QF</span></div></section>
+</main>
+<footer class="wrap footer"><span>QuantFactra · v@@VERSION@@ · <a href="@@REPO@@/commit/@@REVISION@@">@@SHORT_REVISION@@</a></span><span><a href="@@REPO@@/blob/master/LICENSE">MIT · 基于 QUANTAXIS</a><a href="case/data/DATA_NOTICE.md">ECB 数据说明</a><a href="@@REPO@@/issues/new/choose">反馈问题 ↗</a></span></footer>
+</body></html>

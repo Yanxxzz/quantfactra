@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#42654d" stroke-opacity=".22"/></pattern></defs>
+  <rect width="1200" height="630" fill="#101d19"/><rect x="660" width="540" height="630" fill="url(#grid)"/>
+  <g font-family="Segoe UI,Microsoft YaHei,sans-serif">
+    <rect x="64" y="55" width="36" height="36" rx="9" fill="#b9efcf"/><path d="M73 79V67h8v12m5 0V62h6v17" fill="none" stroke="#163522" stroke-width="3"/>
+    <text x="114" y="83" fill="#edf5ec" font-size="26" font-weight="650">QuantFactra</text><text x="1136" y="80" text-anchor="end" fill="#a9c2b1" font-size="13" letter-spacing="2">OPEN SOURCE / MIT</text>
+    <path d="M64 121H1136" stroke="#354c3e"/>
+    <text x="64" y="191" fill="#a8bfae" font-size="13" letter-spacing="2">BUILD RESEARCH AGENTS.</text>
+    <text x="61" y="283" fill="#edf5ec" font-size="65" font-weight="650" letter-spacing="-2">让量化研究，</text>
+    <text x="61" y="370" fill="#b9efcf" font-size="65" font-weight="650" letter-spacing="-2">有据可循。</text>
+    <text x="65" y="430" fill="#bccfc2" font-size="21">用你的 AI，接你的回测平台。</text>
+    <rect x="742" y="191" width="365" height="302" rx="8" fill="#2b4132" stroke="#52735b"/>
+    <rect x="730" y="179" width="365" height="302" rx="8" fill="#fafbf7"/>
+    <text x="757" y="215" fill="#55705d" font-size="12" letter-spacing="1.3">YOUR RESEARCH NOTE</text><text x="1067" y="217" text-anchor="end" fill="#226545" font-size="20" font-weight="700">QF /</text>
+    <path d="M757 237H1067" stroke="#d9e3d8"/>
+    <g fill="#254a32" font-size="12" font-family="Consolas,monospace"><text x="757" y="282">01</text><text x="757" y="345">02</text><text x="757" y="408">03</text></g>
+    <g fill="#23392b" font-size="22" font-weight="600"><text x="794" y="284">假设，有明确的定义</text><text x="794" y="347">回测，有完整的对照</text><text x="794" y="410">结果，有可复现的证据</text></g>
+    <g stroke="#e0e7dc"><path d="M794 305H1067"/><path d="M794 368H1067"/></g>
+    <text x="757" y="454" fill="#647b68" font-size="12">PandaAI / bt / Your platform</text>
+    <path d="M64 527H1136" stroke="#354c3e"/><text x="64" y="574" fill="#b9efcf" font-size="16">yanxxzz.github.io/quantfactra</text><text x="1136" y="574" text-anchor="end" fill="#b5c9bb" font-size="16">公开案例 · 自由接入 · 证据追踪</text>
+  </g>
+</svg>

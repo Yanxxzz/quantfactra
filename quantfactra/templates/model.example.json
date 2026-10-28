@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "provider": "openai_responses",
+  "base_url": "https://api.openai.com/v1",
+  "model": "replace-with-your-model-id",
+  "api_key_env": "QUANTFACTRA_MODEL_KEY",
+  "max_output_tokens": 2048,
+  "timeout_seconds": 120,
+  "receipts_dir": "runs/model-receipts"
+}

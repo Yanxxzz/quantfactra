@@ -1,0 +1,12 @@
+name: Framework bug
+description: Report a generic or synthetic reproduction
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload personal strategies, research outputs, credentials or account data. Use a synthetic reproduction.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction and expected behavior
+    validations:
+      required: true

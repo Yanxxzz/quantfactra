@@ -1,0 +1,12 @@
+include LICENSE README.md README_EN.md CONTRIBUTING.md CHANGELOG.md AGENTS.md
+include pyproject.toml .gitattributes .gitignore
+include publication/allowlist.json
+recursive-include docs *.md *.json *.svg *.txt *.html
+recursive-include quantfactra/templates *.py *.json *.md *.toml
+recursive-include quantfactra/cases *.json *.md
+include panda_alpha/team/roles.json
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include website *.html *.css *.js *.svg *.png
+include .githooks/pre-push
+recursive-include .github *.yml *.md

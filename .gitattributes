@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+quantfactra/cases/fx_momentum/*.json -text whitespace=cr-at-eol
+docs/public-case-result-v1.json -text whitespace=cr-at-eol
+docs/assets/*.svg text eol=lf -whitespace

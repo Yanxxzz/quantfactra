@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">QuantFactra</title><desc id="desc">Build research agents. Keep the evidence. A platform-extensible factor research workflow.</desc>
+  <rect width="1200" height="280" rx="12" fill="#101820"/>
+  <path d="M75 102V179H150V127H208" fill="none" stroke="#72ceb9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#101820" stroke="#72ceb9" stroke-width="5"><circle cx="75" cy="102" r="10"/><circle cx="150" cy="179" r="10"/><circle cx="208" cy="127" r="10"/></g>
+  <text x="270" y="130" fill="#f0f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="65" font-weight="650" letter-spacing="-2">QuantFactra</text>
+  <text x="273" y="179" fill="#a5b6c5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Build research agents. Keep the evidence.</text>
+  <text x="273" y="218" fill="#72ceb9" font-family="Consolas,monospace" font-size="13" letter-spacing="1.5">HYPOTHESIS / BACKTEST / REVIEW / TRACE</text>
+</svg>

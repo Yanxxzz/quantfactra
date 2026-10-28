@@ -1,0 +1,16 @@
+{
+  "platform": {
+    "backend": "my_backtest:build_client",
+    "contract": "quantfactra-v1",
+    "connection_id": "my-local-simulator",
+    "cost_unit": "demo_credits",
+    "state_dir": "runs/adapter/state"
+  },
+  "research": {"cycle": 5, "groups": 10},
+  "compute": {
+    "billing_mode": "free",
+    "planning_credit_estimate": 1,
+    "daily_credit_limit": 10,
+    "recharge_credit_limit": 0
+  }
+}

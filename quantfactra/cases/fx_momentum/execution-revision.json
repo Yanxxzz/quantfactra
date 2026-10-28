@@ -1,0 +1,25 @@
+{
+  "frozen_at_utc": "2026-10-25T07:30:09.089798+00:00",
+  "original_protocol_sha256": "120ae63085aa87a1c8a3751a698252db55998516cab19a70f46b4b5a680fbbdb",
+  "current_protocol_file": "protocol-v2.json",
+  "current_protocol_sha256": "614adf8a8f1f62519c40680a390c9d0026ebce1a97e7d0175d0053efbf2492bd",
+  "reason": "V1 actual minimum cash about -1032 EUR on 1m EUR capital violated its no-borrowing statement. Preserve V1; fix funding before any V2 values/targets/backtests.",
+  "policy": "Reserve 2*r of pre-trade equity for one-way fee rate r. For long-only portfolios, sell+buy notional is bounded by twice equity; target risky weights are scaled by 1-2*r. No interest on reserve.",
+  "unchanged": [
+    "source data",
+    "formula",
+    "lookback",
+    "direction",
+    "window",
+    "groups",
+    "cycle",
+    "execution lag",
+    "cost scenarios"
+  ],
+  "not_claimed": [
+    "blind pre-registration",
+    "alpha improvement",
+    "source qualification",
+    "new factor admission"
+  ]
+}

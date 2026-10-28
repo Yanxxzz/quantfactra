@@ -1,0 +1,52 @@
+{
+  "schema": "quantfactra-public-case-v1",
+  "case_id": "ecb-fx-momentum-v2",
+  "question": "How does a fixed 20-observation currency momentum rule compare with equal weighting, after an explicit execution lag and transaction-cost scenarios?",
+  "source": "ECB euro foreign exchange reference rates; current published historical snapshot",
+  "currencies": [
+    "CHF",
+    "GBP",
+    "JPY",
+    "USD"
+  ],
+  "source_window": {
+    "start": "2011-10-03",
+    "end": "2016-12-30"
+  },
+  "window": {
+    "start": "2012-01-03",
+    "end": "2016-12-30"
+  },
+  "formula": "MOMENTUM(close,20)",
+  "direction": 1,
+  "cycle": 5,
+  "groups": 2,
+  "execution_lag_observations": 1,
+  "source_calendar_rule": "Retain all raw source rows and status codes; use only dates with four positive finite published quotes, exclude missing quotes by current-date availability, never fill them",
+  "source_calendar_clarification": "Added before any factor values or results: the response contains four holiday dates (16 H-status records) without quotes. The fixed date window, currencies, strategy and costs are unchanged.",
+  "annualization_observations": 252,
+  "initial_capital": 1000000,
+  "numeraire": "EUR",
+  "one_way_cost_bps": [
+    0,
+    10
+  ],
+  "primary_cost_bps": 10,
+  "benchmark": "Equal-weight all four currencies on exactly the same rebalance dates",
+  "cash_interest": 0,
+  "currency_interest": 0,
+  "leverage": false,
+  "integer_positions": false,
+  "tie_break": "Stable ascending currency code within equal momentum values",
+  "decision_rule": "Describe whether the highest-momentum group has a greater total return than the matched equal-weight benchmark at the primary cost; do not optimize parameters after viewing results",
+  "limitations": [
+    "Reference rates are information observations, not executable bid/ask quotes",
+    "Reciprocals convert quoted currency per EUR to EUR per unit; no currency interest or FX carry is modeled",
+    "The input is the currently published historical snapshot, not certified historical vintages",
+    "Costs are declared illustrative scenarios, not observed broker charges",
+    "This is a retrospective, four-currency software/research example, not a new factor admission or investment recommendation"
+  ],
+  "fee_reserve": "twice_one_way_rate",
+  "execution_revision": "V2 retains twice each one-way fee rate in cash at every scheduled rebalance, applied identically to both groups and the benchmark. V1 allowed small borrowing when fees were charged after full allocation.",
+  "revision_status": "Engineering correction after V1 results were observed; not a blind or new predictive hypothesis. Formula, dates, currencies, groups and costs unchanged."
+}

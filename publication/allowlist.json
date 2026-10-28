@@ -1,0 +1,538 @@
+{
+  "schema": "quantfactra-public-allowlist-v1",
+  "scope": "Reusable framework, synthetic fixtures and explicitly public examples only",
+  "files": {
+    ".gitattributes": {
+      "classification": "configuration",
+      "sha256": "50f2b33bebacc45cdd8ac738f0691a22e075705528032dcb5684314f7efc8056"
+    },
+    ".githooks/pre-push": {
+      "classification": "publication_control",
+      "sha256": "256ea10019e2c6a9a1e383d797927d18573101fd3ad3fa4d0b7062f1bcc265e3"
+    },
+    ".github/ISSUE_TEMPLATE/bug.yml": {
+      "classification": "documentation",
+      "sha256": "b9c7e8fc90db53f6ba661743adfb848c8bf0aede5f33b63988f23ada78ed8ea7"
+    },
+    ".github/pull_request_template.md": {
+      "classification": "documentation",
+      "sha256": "f2150346397f4a787dd7e09dfb5aa8bf825ce1e87620139da17140c32e5bfc1d"
+    },
+    ".github/workflows/pages.yml": {
+      "classification": "publication_control",
+      "sha256": "1d4a6c44455d655e5ed8a56885b1983e8def303f3df888355440266c2fe695a6"
+    },
+    ".github/workflows/public-framework.yml": {
+      "classification": "publication_control",
+      "sha256": "2a31a989cc52a60e946e68b0f0a3beedb960cf6f85628f65aa91600037e93193"
+    },
+    ".gitignore": {
+      "classification": "configuration",
+      "sha256": "1f56a5c8e05255a14a9a39b5cdccbd68a28884e228407b5345981c91327cfdb3"
+    },
+    "AGENTS.md": {
+      "classification": "documentation",
+      "sha256": "a77292da946161a2ae8b53e82c250dc433ea075a7bd5e3c3435830d83d28fad8"
+    },
+    "CHANGELOG.md": {
+      "classification": "documentation",
+      "sha256": "a23e91021d485ecdccc07b00452240338a983ae78cbe8c0f77980d11a4404eda"
+    },
+    "CONTRIBUTING.md": {
+      "classification": "documentation",
+      "sha256": "8e8c2b0e0b113a9f21958594457590fb2ec67850784bf70e530b862137770919"
+    },
+    "LICENSE": {
+      "classification": "documentation",
+      "sha256": "96ebf515d25a58bbd8be4543a5c198e576db52738f26c82270ececb1dc273318"
+    },
+    "MANIFEST.in": {
+      "classification": "configuration",
+      "sha256": "c084ed443a379a926e3828e91ea743a31791d4b02c63c5fbf67e9067b60356a8"
+    },
+    "README.md": {
+      "classification": "documentation",
+      "sha256": "80fae6ef0f4e7cd64dd1411f1a3d0fcd5ce9ce11ed2ec094b4c5572f49c74395"
+    },
+    "README_EN.md": {
+      "classification": "documentation",
+      "sha256": "2a7875a549486eb098105f86795ef11cef8c84fc37bcc6a3ab5fce811346214e"
+    },
+    "docs/ai-integration.md": {
+      "classification": "documentation",
+      "sha256": "aefa45e772d0c163110041a21af6d01e1ada020307865197fae90353ecd720ad"
+    },
+    "docs/architecture.md": {
+      "classification": "documentation",
+      "sha256": "4734dbc0739d00748f52e01ff7794026bcaf0af07256c98e6e2335eca307d40f"
+    },
+    "docs/assets/french-momentum.svg": {
+      "classification": "public_example",
+      "sha256": "3fb6ae96b50127c3cedbf496df15e7f879ab83d5c657850fc738137434e6a957"
+    },
+    "docs/assets/fx-case-nav.svg": {
+      "classification": "public_example",
+      "sha256": "dfe6fd2e614dc09b3ad336ab4e9f3977c3abd069b1d8bc2fd51fadb2d35d789a"
+    },
+    "docs/assets/quantfactra-architecture.svg": {
+      "classification": "site_asset",
+      "sha256": "947291a9d3ddefdc741312ce6ea4fa3f27990f43a1c74647ebe33a12cac01176"
+    },
+    "docs/assets/quantfactra-hero.svg": {
+      "classification": "site_asset",
+      "sha256": "33d67ec55fb373a4bc82bfc05b36f7cf19f239ec15907e910214124fe7497de1"
+    },
+    "docs/backends.md": {
+      "classification": "documentation",
+      "sha256": "5f3a906853af997ce800b07f8ced3771e22ba7c2ed3edf6f536faba75f5f5eb7"
+    },
+    "docs/bt-backend.md": {
+      "classification": "documentation",
+      "sha256": "e24137dd4be106a9d754b52f3678a12dbe73d22d9a2a67d298604afeb302b53a"
+    },
+    "docs/diagrams/ARCHIFY_LICENSE.txt": {
+      "classification": "site_asset",
+      "sha256": "b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706"
+    },
+    "docs/diagrams/quantfactra-architecture.html": {
+      "classification": "site_asset",
+      "sha256": "772b247c36df0dfee287183689b876aa7c8697791eaa17719a96280eb69ab4ad"
+    },
+    "docs/model-providers.md": {
+      "classification": "documentation",
+      "sha256": "4c234c7cf671740baa88e47952465201f0c737683f4e1b7ccae8b21f454bafc3"
+    },
+    "docs/pages-and-release.md": {
+      "classification": "documentation",
+      "sha256": "77af385b91a368e85b1a978ac00cb53116f879dd5e2911622f64572b3540b0a8"
+    },
+    "docs/public-case-result-v1.json": {
+      "classification": "public_example",
+      "sha256": "6ed89612bd35b46aac05c3b9626fff060a1ce2a7c8f96765982c3748572d28f9"
+    },
+    "docs/public-case-result.json": {
+      "classification": "public_example",
+      "sha256": "c9c4c5cf428e407768a1b4b554f4467b53cb79c64dde3079ff22633d306887ee"
+    },
+    "docs/public-research-case.md": {
+      "classification": "documentation",
+      "sha256": "8806f6a0c449f16729b1e0db43526f8cc97e02a7330981c7382010f1be64fd56"
+    },
+    "docs/publication.md": {
+      "classification": "documentation",
+      "sha256": "cb163e653c162df2b717a1585b4e50413af82842b3e35a15ffe7a0731f24fa3c"
+    },
+    "docs/published-momentum-case.md": {
+      "classification": "documentation",
+      "sha256": "2283731c0cb5d41bf0ee389f14d68c768308b8a18961b848125dc4aa23884a93"
+    },
+    "docs/published-momentum-result.json": {
+      "classification": "public_example",
+      "sha256": "3fb48272230daeebaaf5096c0107cab05c8e9ee789613eb880fa5b0b981e1045"
+    },
+    "docs/quickstart.md": {
+      "classification": "documentation",
+      "sha256": "7fa02946ff320f977fd9711c6013a50824e97444d7a6b0e551eab1ccb883cb55"
+    },
+    "panda_alpha/__init__.py": {
+      "classification": "framework",
+      "sha256": "09acc0878375f34cc16a02f7ea896cfed5541a76c1878865f2af65b7df1a2457"
+    },
+    "panda_alpha/backend_contract.py": {
+      "classification": "framework",
+      "sha256": "a82612cda9b8249d14cb091d463ab023acb0746af3c06a2f015729b3269ac34e"
+    },
+    "panda_alpha/backend_reports.py": {
+      "classification": "framework",
+      "sha256": "453b16e563cdf668792f51fd66e4ccb0518a866bfb75e976475fbc7c287d4b77"
+    },
+    "panda_alpha/backends.py": {
+      "classification": "framework",
+      "sha256": "cd7e02099c0b22368cdcb4b219e7923c4b784584428147364972b73d35bf0b63"
+    },
+    "panda_alpha/diversity.py": {
+      "classification": "framework",
+      "sha256": "1e6f8dc0700df3db5e334a8092d39b785f9fdf54b5ddbb7e8703434af798023e"
+    },
+    "panda_alpha/evaluation.py": {
+      "classification": "framework",
+      "sha256": "f14191e4ed80a8446478fc4382947c350b2840f4cb4257a0a85115deb47d9362"
+    },
+    "panda_alpha/evolution.py": {
+      "classification": "framework",
+      "sha256": "21c5669de6ae9cbb03795fc721878250b12bca47df22efd4e886265359b74c92"
+    },
+    "panda_alpha/native_preflight.py": {
+      "classification": "framework",
+      "sha256": "8d465764ccb7e23547e057e0740e05be3206c9b4d607758ff2f74918058b021a"
+    },
+    "panda_alpha/platform.py": {
+      "classification": "framework",
+      "sha256": "7b0e2aaf8117f42d7eb15a67a0c09b3d6e4f0ca442afeac0864059a166148b28"
+    },
+    "panda_alpha/qualifications.py": {
+      "classification": "framework",
+      "sha256": "f9555ed6b2f43e142e1777408ebedbd16b5093208790967010880254eae3cff9"
+    },
+    "panda_alpha/registry.py": {
+      "classification": "framework",
+      "sha256": "bc8d52ec09543159855ee4f722b00bf57290dcf90fba6bc5544818ab8ea22627"
+    },
+    "panda_alpha/research_budget.py": {
+      "classification": "framework",
+      "sha256": "4b0f9edc8bf51b09784157b7f1c2206103e6c1558c0d6a685a95af8ff8c334b1"
+    },
+    "panda_alpha/team/__init__.py": {
+      "classification": "framework",
+      "sha256": "9a7c29a14ed11312608b68ccf5a015ecd407b895970e3fdbb42e4b68d4e4e28b"
+    },
+    "panda_alpha/team/__main__.py": {
+      "classification": "framework",
+      "sha256": "f995bfd8e6369a771515e5489554b4c64a4e5c73963c555c849beb34cc4e2324"
+    },
+    "panda_alpha/team/board.py": {
+      "classification": "framework",
+      "sha256": "1022722638f433281fcd968686f757b3444b286742c3d6cc2a923e481d12e4e6"
+    },
+    "panda_alpha/team/budget.py": {
+      "classification": "framework",
+      "sha256": "d8910f7d9489f7f95200c7197ea8bd7c04f63d21eb566ad571200b3469efd5a3"
+    },
+    "panda_alpha/team/codex_worker.py": {
+      "classification": "framework",
+      "sha256": "37188e820dd9a4bcfbc14aa90d428b12bf484a055075bc42082862045c723e5c"
+    },
+    "panda_alpha/team/conclusions.py": {
+      "classification": "framework",
+      "sha256": "f15670bd2f186f7978bb63094250178cf55d70ec37989b78594d77dfa951e681"
+    },
+    "panda_alpha/team/context_codec.py": {
+      "classification": "framework",
+      "sha256": "b0e451eb448eac5a8f99eabab6386a4d17013efdbefb8c3de24d9de126dd2ea1"
+    },
+    "panda_alpha/team/contracts.py": {
+      "classification": "framework",
+      "sha256": "12853581f15bd8ac0bdcba1c248629a78f68b80248937474489c5bfeafa10e6d"
+    },
+    "panda_alpha/team/coordinator.py": {
+      "classification": "framework",
+      "sha256": "f889fb5f6c057791577c43e9204b8ec353963ad264c131c52fc8c27c465d0560"
+    },
+    "panda_alpha/team/data_sources.py": {
+      "classification": "framework",
+      "sha256": "bb66beded789914bf99a54a800909d2d41e0b881748a438ffacd9bba388a7275"
+    },
+    "panda_alpha/team/demo.py": {
+      "classification": "framework",
+      "sha256": "f8a870c65e6b25378fc86562e316a2f974da079ce2829f4eb1d167e0914517fb"
+    },
+    "panda_alpha/team/evidence.py": {
+      "classification": "framework",
+      "sha256": "c4a4413cd400a5356f1afd92fbbebd3560d8fab19fd9ec10253e95ec9fed4d93"
+    },
+    "panda_alpha/team/host.py": {
+      "classification": "framework",
+      "sha256": "5c7770c6a958ca6f7059aed31ff7844dc08a925fd6537b867fcdf84fa47df36f"
+    },
+    "panda_alpha/team/local_screen.py": {
+      "classification": "framework",
+      "sha256": "d260106059fbc99a4d0bb17af1a5655682b4a1b7cb4323e3ea3652165d159750"
+    },
+    "panda_alpha/team/public_docs.py": {
+      "classification": "framework",
+      "sha256": "0239ccaa267fe624d20742980ed35a8da78422c86f6396e117e00d9d101198a3"
+    },
+    "panda_alpha/team/rehearsal.py": {
+      "classification": "framework",
+      "sha256": "16743dc8cf2e483c2c53e28b1b9b622986ff156ac7d165442e6382f688c905a8"
+    },
+    "panda_alpha/team/roles.json": {
+      "classification": "documentation",
+      "sha256": "53f9cf10e9220881106f46120c8e4ad41b5573a7f3a41de63b4228c7b30b2a9e"
+    },
+    "panda_alpha/team/runtime.py": {
+      "classification": "framework",
+      "sha256": "e2b34b86f38ee9f6be6695c1052b9075e13c70fd34b55928d4674b3ab980b2a1"
+    },
+    "panda_alpha/team/runtime_io.py": {
+      "classification": "framework",
+      "sha256": "97cbd72ed0b2faa03af791c627412567c87b99ad0e081f5d17ebe970e2b5ba65"
+    },
+    "panda_alpha/team/sources.py": {
+      "classification": "framework",
+      "sha256": "d4d448ccc92e5198fe9b51001a3a501b28dd1fe98fe8a96c5366cccf4980da90"
+    },
+    "pyproject.toml": {
+      "classification": "configuration",
+      "sha256": "f936522f9cb4e50af1431c4c3dd108f01f3a4a78f7b30bff596d25002bdba5cc"
+    },
+    "quant_research/__init__.py": {
+      "classification": "framework",
+      "sha256": "06e3375382289eb214c8093499ba2d4ff53742337b6244a7165dbf22a6bc90dd"
+    },
+    "quant_research/__main__.py": {
+      "classification": "framework",
+      "sha256": "9f3437386a5152ce1bc6d46516b7bebb8272542a543ee2a2eef79c6a930d1cee"
+    },
+    "quant_research/cli.py": {
+      "classification": "framework",
+      "sha256": "6b3056c8055da452285f2797b60da7ab1d78f895f0e72b6599dd0ad882170da7"
+    },
+    "quantfactra/__init__.py": {
+      "classification": "framework",
+      "sha256": "815a6e4553784054edfcc00cda783f09ba7d13aa784963a5db4ce6a755d24c18"
+    },
+    "quantfactra/__main__.py": {
+      "classification": "framework",
+      "sha256": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a"
+    },
+    "quantfactra/adapters/__init__.py": {
+      "classification": "framework",
+      "sha256": "e66ed42d247b20e12b69a1c95cd042969569f96613d43263989e4b934b26feeb"
+    },
+    "quantfactra/adapters/bt.py": {
+      "classification": "framework",
+      "sha256": "86271ddf470ad110f015e145c9aa4bfc88bf26082ee1957ff2efa63b422d507b"
+    },
+    "quantfactra/adapters/demo.py": {
+      "classification": "framework",
+      "sha256": "34b8fd7202e1ae16af16560a52a88069e998141a6180272185c3a06c89de7a49"
+    },
+    "quantfactra/adapters/pandaai.py": {
+      "classification": "framework",
+      "sha256": "8ff675d222d71668b4190946a3ca1dad6751b68ba92e93077d2ded91de5b800d"
+    },
+    "quantfactra/ai.py": {
+      "classification": "framework",
+      "sha256": "4d48a3a984186ded19949ff9274c544511577a18faf9eb3c74ecc9e553e66833"
+    },
+    "quantfactra/bt_engine.py": {
+      "classification": "framework",
+      "sha256": "7163d617b1cd8669e30408cc962cc77a7ed238d22f10484864bd38d1aef4ca44"
+    },
+    "quantfactra/case_report.py": {
+      "classification": "framework",
+      "sha256": "00e1be3f77f72fb3e4592d0eb202bc6666f23a35dcbbfe01c5e318780397f975"
+    },
+    "quantfactra/cases/french_momentum/DATA_NOTICE.md": {
+      "classification": "public_example",
+      "sha256": "e49325a32a9f9a1783e171eef8dec2faa3c43d753bcf125ad26d00f7383480fa"
+    },
+    "quantfactra/cases/french_momentum/protocol.json": {
+      "classification": "public_example",
+      "sha256": "3e095e3029ec91b9af3ecbc90eeb52c50ac25070d47e1ca6f4e9119358ee1195"
+    },
+    "quantfactra/cases/french_momentum/reference.json": {
+      "classification": "public_example",
+      "sha256": "ca03feb44ed60fd78eaf7b11549957b6f5fa2c5e91f7ff16ef81c221b757d28b"
+    },
+    "quantfactra/cases/fx_momentum/DATA_NOTICE.md": {
+      "classification": "public_example",
+      "sha256": "d11e626fc2e8c3ef169efee8402d8f9f9800ec464f76303afc59f694682c7ede"
+    },
+    "quantfactra/cases/fx_momentum/execution-revision.json": {
+      "classification": "public_example",
+      "sha256": "35dc090c913961be794f5f2e7142a7177b8b43539966f28f9c6ec703a3a2dd89"
+    },
+    "quantfactra/cases/fx_momentum/protocol-v2.json": {
+      "classification": "public_example",
+      "sha256": "614adf8a8f1f62519c40680a390c9d0026ebce1a97e7d0175d0053efbf2492bd"
+    },
+    "quantfactra/cases/fx_momentum/protocol.json": {
+      "classification": "public_example",
+      "sha256": "120ae63085aa87a1c8a3751a698252db55998516cab19a70f46b4b5a680fbbdb"
+    },
+    "quantfactra/cases/fx_momentum/rates.json": {
+      "classification": "public_example",
+      "sha256": "3399b7d03dda29989960022341de5fe793b8519f0b32793c366de46eae494d8d"
+    },
+    "quantfactra/cases/fx_momentum/source.json": {
+      "classification": "public_example",
+      "sha256": "884eb284efcdecb0c8ea240dd42c848ed93caa553268fb05160ff2b5768af816"
+    },
+    "quantfactra/cli.py": {
+      "classification": "framework",
+      "sha256": "d2e4ae40d10e664c701fe8ece33b8088cd96f553953904839a618e30de4fb882"
+    },
+    "quantfactra/demo.py": {
+      "classification": "framework",
+      "sha256": "5697a9308a228925c477edd99ad622928e299854fc828886d7485eb66f671e41"
+    },
+    "quantfactra/execution.py": {
+      "classification": "framework",
+      "sha256": "cccfc950cb8216b138f7cc668abcadbf29fd395d0cb04d1735754ce444d11888"
+    },
+    "quantfactra/model_worker.py": {
+      "classification": "framework",
+      "sha256": "8f80c39cb4de6cc787649a93511682fe2ab06a5183a95cefc2da9de7280723ab"
+    },
+    "quantfactra/onboarding.py": {
+      "classification": "framework",
+      "sha256": "05292b55b9895d02406cfb2517f130e0d820ee7d377b61077181214d9ff03d0d"
+    },
+    "quantfactra/providers.py": {
+      "classification": "framework",
+      "sha256": "9cf0df5a1a0c02bfa08c59f06bd6a48558c5d2c6ab600b5788435d667fca5c56"
+    },
+    "quantfactra/public_case.py": {
+      "classification": "framework",
+      "sha256": "a4e5997490b2a618d3da9a850f1d32741edd607dea42e0467e084c1a3919349a"
+    },
+    "quantfactra/published_factor.py": {
+      "classification": "framework",
+      "sha256": "ccf6a6f562adf8716654b0a8ebfee6c03a0e521d1d202d8388a6bba27392daac"
+    },
+    "quantfactra/templates/README.md": {
+      "classification": "configuration",
+      "sha256": "82183ae69f7d71a97d20d368dd257b7a6da5255118f6320874b47ed0de7b05f1"
+    },
+    "quantfactra/templates/config.json": {
+      "classification": "configuration",
+      "sha256": "661ea6db2b0d1c512e2d516d15604e6ef7ee2b9a3f980a9fb24e9c860edc143d"
+    },
+    "quantfactra/templates/model.example.json": {
+      "classification": "configuration",
+      "sha256": "78d4b59e9f3d059419213cbee6c4305bf72adb72edada520aff2d02ad24afe9e"
+    },
+    "quantfactra/templates/my_backtest.py": {
+      "classification": "configuration",
+      "sha256": "2869865b7789912b16c947b31f9afbb28b922b670b6d45dff64fb5e7c97683d3"
+    },
+    "quantfactra/templates/my_planner.py": {
+      "classification": "configuration",
+      "sha256": "fd5ff038a49c1e3230b796f2fcf1ae3c23f8db90db55a235beeeae9fa343be7d"
+    },
+    "quantfactra/templates/pyproject.toml": {
+      "classification": "configuration",
+      "sha256": "0a3e1f5157581133a9614a706cc5c1c28cb5d3df7f552ffcc0b579accca853ba"
+    },
+    "quantfactra/templates/run_adapter.py": {
+      "classification": "configuration",
+      "sha256": "03085cbb47d4ae034c12195a7709cc38401df1fea969421f70bf0728573a5cfb"
+    },
+    "quantfactra/templates/run_ai.py": {
+      "classification": "configuration",
+      "sha256": "252b1f174c330d2fe0d83532ff07ea0bf7039fd149ca2c3af169d37bd76f8f98"
+    },
+    "quantfactra/templates/worker.py": {
+      "classification": "configuration",
+      "sha256": "71ed08769ff5544d9aeb83837a277edb4b2440da800e75fa46cbe15d191af5d3"
+    },
+    "quantfactra/workflow.py": {
+      "classification": "framework",
+      "sha256": "793266701d8cadf9c18bce9db3e7bda8bacc2e3b2944069565c6e1bf804df5f1"
+    },
+    "scripts/build_site.py": {
+      "classification": "publication_control",
+      "sha256": "678f45abec13ca84bffd2cf7ffbe8038da464d373ef8e3aaa2244f2c66fdad78"
+    },
+    "scripts/check_publication.py": {
+      "classification": "publication_control",
+      "sha256": "d88327c0a6a3f5b5486d411ca5569abcb17b1f274c2641ef70e173fcf0287ae4"
+    },
+    "scripts/publish_momentum_case.py": {
+      "classification": "publication_control",
+      "sha256": "aaeb4da81cf934be485fa497d78eebbab348c8afa0a5edd86a8291833fb9d8b6"
+    },
+    "scripts/verify_public_research.py": {
+      "classification": "publication_control",
+      "sha256": "50294637f91b82a18c9779745e9bc69544dd2ca80e67f7e63726d41fecda6ce0"
+    },
+    "tests/fixtures/codex_role_cli.py": {
+      "classification": "synthetic_test",
+      "sha256": "8dd5918a059bddf83844e931b0df45894407d1b88ec34dce56e0b8939a600394"
+    },
+    "tests/test_backends.py": {
+      "classification": "synthetic_test",
+      "sha256": "5e6ef7638246283c7e4d783172786da36104a00e937ed8cc628ae4b6f074962e"
+    },
+    "tests/test_model_providers.py": {
+      "classification": "synthetic_test",
+      "sha256": "e1b5de2b325fbb5c77b5a044dfacbda93f16afb4b849d2b3b92e15e1dce55f99"
+    },
+    "tests/test_public_case.py": {
+      "classification": "synthetic_test",
+      "sha256": "0053c7a44e8bd5916f3294de8b830a6ce8b7dd13441d6a8018f07d40cac725a0"
+    },
+    "tests/test_public_site.py": {
+      "classification": "synthetic_test",
+      "sha256": "7fbc94c4d2774a2b112735f3df9333888f304649d1c6ffa9f4f39e957f40c670"
+    },
+    "tests/test_publication_boundary.py": {
+      "classification": "synthetic_test",
+      "sha256": "fd621b206437dc32125566b462da731028844c2e7a473cb719490447c25c033c"
+    },
+    "tests/test_published_factor.py": {
+      "classification": "synthetic_test",
+      "sha256": "f7173dd5364d13245cd9d5939da51c1b450ed842d43dac2de0737ef2e0086970"
+    },
+    "tests/test_quantfactra_backend.py": {
+      "classification": "synthetic_test",
+      "sha256": "64cf792c4054044a7c6dfc3d29dde387d93e41273fa9cbf673d2f22255edbd0b"
+    },
+    "tests/test_quantfactra_onboarding.py": {
+      "classification": "synthetic_test",
+      "sha256": "c827f743d853316045786b84d687348ad253134a20b55b89e13e17641b765bcd"
+    },
+    "tests/test_team_context_codec.py": {
+      "classification": "synthetic_test",
+      "sha256": "7905afb763ab926223a0acbaaf30882591276816ff601fd1201bc4623e9a9b12"
+    },
+    "tests/test_team_lifecycle.py": {
+      "classification": "synthetic_test",
+      "sha256": "2a5e75113012dd342a813b34c5062a574d92416ad35ef0e532ce80fd1219f05e"
+    },
+    "tests/test_team_proposal_isolation.py": {
+      "classification": "synthetic_test",
+      "sha256": "0dbd349406942c74f179325cf4cac989ae5b6c06064ebd0a1f59a106184321bf"
+    },
+    "tests/test_team_reply_encoding.py": {
+      "classification": "synthetic_test",
+      "sha256": "d2a025964624f2a9362c5adbd21f76bba98b4a56d0c4e8cd2c11a909c737b1df"
+    },
+    "tests/test_team_runtime.py": {
+      "classification": "synthetic_test",
+      "sha256": "938ca05f10c94e6b7bf1df3ea0400179512b587e942c9235005c1080ccf11123"
+    },
+    "tests/test_team_workflow.py": {
+      "classification": "synthetic_test",
+      "sha256": "658a0ee7b2ea428d534fccfd352f8e948e5e9b9b34bd8e1265f13894c334b88b"
+    },
+    "website/404.html": {
+      "classification": "site_asset",
+      "sha256": "a657139525a24cbd8fa332837b69e7f2212f5b5021f41663aad9151b90fd2c9a"
+    },
+    "website/assets/favicon.svg": {
+      "classification": "site_asset",
+      "sha256": "148ca0beb6787e7c86534a0bf2314c88db756b876af06531f3b226083187ffba"
+    },
+    "website/assets/site.css": {
+      "classification": "site_asset",
+      "sha256": "4cabb4b2ca8ee6b0b75020425698191e2f83665d2b45e31eece1dd85d6631ea5"
+    },
+    "website/assets/site.js": {
+      "classification": "site_asset",
+      "sha256": "8282acaaaca5f42280643a2e46d892b19b69389915cdaf700985042a22fb4237"
+    },
+    "website/assets/social-card.png": {
+      "classification": "site_asset",
+      "sha256": "580e8f6e276b92c9cb010d4e5d3a3948e985085a1080908d82b51ad64f4e2a46"
+    },
+    "website/assets/social-card.svg": {
+      "classification": "site_asset",
+      "sha256": "2b9052d9f91651608b8e65185eee37e360be00e8782336ae54b9a98b840b5667"
+    },
+    "website/case.html": {
+      "classification": "site_asset",
+      "sha256": "e033d151c45f97db0f743e8ffd4b631da975ab058281e4590bc0b5d37790e93a"
+    },
+    "website/index.html": {
+      "classification": "site_asset",
+      "sha256": "697b0301ddc60e4159e3220be5bb62cada6676c45b241632726dfbb0eef784b7"
+    },
+    "website/momentum.html": {
+      "classification": "site_asset",
+      "sha256": "d07bab44a83079d1dfe9880e9f411d09e0378145305d11422d958e4205f1f11f"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+if [ -x .venv/Scripts/python.exe ]; then
+  exec .venv/Scripts/python.exe -B scripts/check_publication.py --pre-push
+elif [ -x .venv/bin/python ]; then
+  exec .venv/bin/python -B scripts/check_publication.py --pre-push
+else
+  exec python -B scripts/check_publication.py --pre-push
+fi

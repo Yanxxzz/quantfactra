@@ -1,0 +1,232 @@
+{
+  "schema": "quantfactra-published-factor-result-v1",
+  "case_id": "french-momentum-1927-2016-v1",
+  "source": {
+    "publisher": "Kenneth R. French Data Library",
+    "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+    "archive_sha256": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e",
+    "csv_sha256": "613b628c5ffa8b957e03ad3a4ccd891d3aa6daafc1801dffb7db7376f2017bdc",
+    "selected_returns_sha256": "fc2ad8ed3f443dd7d9d7485da0919ad1fd20fe50524128f687e2a4c8217013a7",
+    "header": "This file was created using the 202608 CRSP database.  It",
+    "months": 1080,
+    "first_month": "1927-01",
+    "last_month": "2016-12",
+    "input_unit": "percent per month",
+    "historical_vintage_certified": false
+  },
+  "scope": "Replay of publisher-constructed monthly long-short factor returns. No stock-level signals, trades, bt engine, PandaAI Run, or investable account reconstruction.",
+  "periods": [
+    {
+      "label": "full",
+      "start": "1927-01",
+      "end": "2016-12",
+      "paths": [
+        {
+          "monthly_drag_bps": 0,
+          "metrics": {
+            "months": 1080,
+            "geometric_annual_return": 0.0645449846679849,
+            "annual_mean": 0.07826555555555556,
+            "annual_volatility": 0.1647483750279458,
+            "mean_to_volatility_zero_benchmark": 0.47506116853826086,
+            "terminal_index": 278.45924415287124,
+            "max_drawdown": -0.7843714812680127,
+            "worst_month": {
+              "date": "1932-08",
+              "return": -0.5261
+            },
+            "worst_year": {
+              "year": "1932",
+              "return": -0.6445595791468308
+            },
+            "positive_years": 70,
+            "calendar_years": 90
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 1080,
+            "maximum_relative_index_error": 3.0106811144873493e-15,
+            "maximum_absolute_drawdown_error": 6.938893903907228e-16,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        },
+        {
+          "monthly_drag_bps": 10,
+          "metrics": {
+            "months": 1080,
+            "geometric_annual_return": 0.051886504981861856,
+            "annual_mean": 0.06626555555555555,
+            "annual_volatility": 0.1647483750279458,
+            "mean_to_volatility_zero_benchmark": 0.4022228173377438,
+            "terminal_index": 94.88542534664147,
+            "max_drawdown": -0.8028130614251249,
+            "worst_month": {
+              "date": "1932-08",
+              "return": -0.5271
+            },
+            "worst_year": {
+              "year": "1932",
+              "return": -0.6493813394525005
+            },
+            "positive_years": 69,
+            "calendar_years": 90
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 1080,
+            "maximum_relative_index_error": 3.872335854395364e-15,
+            "maximum_absolute_drawdown_error": 1.5959455978986625e-15,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        },
+        {
+          "monthly_drag_bps": 25,
+          "metrics": {
+            "months": 1080,
+            "geometric_annual_return": 0.0331572296179488,
+            "annual_mean": 0.04826555555555555,
+            "annual_volatility": 0.1647483750279458,
+            "mean_to_volatility_zero_benchmark": 0.2929652905369683,
+            "terminal_index": 18.83552437867148,
+            "max_drawdown": -0.8297786529562473,
+            "worst_month": {
+              "date": "1932-08",
+              "return": -0.5286
+            },
+            "worst_year": {
+              "year": "1932",
+              "return": -0.6565027804806916
+            },
+            "positive_years": 65,
+            "calendar_years": 90
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 1080,
+            "maximum_relative_index_error": 1.974147781131256e-15,
+            "maximum_absolute_drawdown_error": 6.661338147750939e-16,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "post_publication",
+      "start": "1994-01",
+      "end": "2016-12",
+      "paths": [
+        {
+          "monthly_drag_bps": 0,
+          "metrics": {
+            "months": 276,
+            "geometric_annual_return": 0.0327323408175486,
+            "annual_mean": 0.0488608695652174,
+            "annual_volatility": 0.1767091390833341,
+            "mean_to_volatility_zero_benchmark": 0.27650448538586986,
+            "terminal_index": 2.0975816862559324,
+            "max_drawdown": -0.577764828808089,
+            "worst_month": {
+              "date": "2009-04",
+              "return": -0.3436
+            },
+            "worst_year": {
+              "year": "2009",
+              "return": -0.5283057976197962
+            },
+            "positive_years": 16,
+            "calendar_years": 23
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 276,
+            "maximum_relative_index_error": 1.3187819774431142e-15,
+            "maximum_absolute_drawdown_error": 6.938893903907228e-16,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        },
+        {
+          "monthly_drag_bps": 10,
+          "metrics": {
+            "months": 276,
+            "geometric_annual_return": 0.020421903675912415,
+            "annual_mean": 0.03686086956521739,
+            "annual_volatility": 0.1767091390833341,
+            "mean_to_volatility_zero_benchmark": 0.20859628288853926,
+            "terminal_index": 1.591969573430571,
+            "max_drawdown": -0.5823839549790688,
+            "worst_month": {
+              "date": "2009-04",
+              "return": -0.3446
+            },
+            "worst_year": {
+              "year": "2009",
+              "return": -0.5343466700182979
+            },
+            "positive_years": 15,
+            "calendar_years": 23
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 276,
+            "maximum_relative_index_error": 1.0731858422209532e-15,
+            "maximum_absolute_drawdown_error": 7.355227538141662e-16,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        },
+        {
+          "monthly_drag_bps": 25,
+          "metrics": {
+            "months": 276,
+            "geometric_annual_return": 0.0022082194764322344,
+            "annual_mean": 0.01886086956521739,
+            "annual_volatility": 0.1767091390833341,
+            "mean_to_volatility_zero_benchmark": 0.10673397914254343,
+            "terminal_index": 1.0520420170632248,
+            "max_drawdown": -0.5993185760918125,
+            "worst_month": {
+              "date": "2009-04",
+              "return": -0.3461
+            },
+            "worst_year": {
+              "year": "2009",
+              "return": -0.5432753375516519
+            },
+            "positive_years": 15,
+            "calendar_years": 23
+          },
+          "arithmetic_audit": {
+            "method": "Independent Decimal(50) multiplication and running peaks for every month; not an external model review",
+            "checked_months": 276,
+            "maximum_relative_index_error": 1.5286054155118033e-15,
+            "maximum_absolute_drawdown_error": 6.661338147750939e-16,
+            "tolerance": 1e-11,
+            "passed": true
+          }
+        }
+      ]
+    }
+  ],
+  "historical_positive_evidence": true,
+  "selection": "Known published positive momentum anomaly, deliberately selected for an educational contrast; not a new discovery or an unbiased factor search.",
+  "cost_scope": "0 bps is the published gross factor. 10/25 bps are fixed monthly return deductions for sensitivity, NOT per-trade fees or estimates of executable net performance. Turnover, financing, borrow, market impact and tax are unavailable.",
+  "official_runs": 0,
+  "stock_level_replication": false,
+  "clean_oos": false,
+  "pool_admission": false,
+  "reproduced_at_utc": "2026-10-27T03:28:36.176608+00:00",
+  "implementation_lf_sha256": "ccf6a6f562adf8716654b0a8ebfee6c03a0e521d1d202d8388a6bba27392daac",
+  "protocol_sha256": "3e095e3029ec91b9af3ecbc90eeb52c50ac25070d47e1ca6f4e9119358ee1195",
+  "publication_scope": "Derived statistics and year-end sampled plot only; original ZIP and monthly source returns are not redistributed.",
+  "aggregate_audit": {
+    "method": "NumPy from original decimal inputs; every period and deduction",
+    "comparisons": 24,
+    "maximum_absolute_error": 1.5265566588595902e-16,
+    "passed": true
+  },
+  "figure_sha256": "3fb6ae96b50127c3cedbf496df15e7f879ab83d5c657850fc738137434e6a957"
+}

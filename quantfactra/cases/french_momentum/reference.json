@@ -1,0 +1,31 @@
+{
+  "case_id": "french-momentum-1927-2016-v1",
+  "protocol_sha256": "3e095e3029ec91b9af3ecbc90eeb52c50ac25070d47e1ca6f4e9119358ee1195",
+  "selected_returns_sha256": "fc2ad8ed3f443dd7d9d7485da0919ad1fd20fe50524128f687e2a4c8217013a7",
+  "original_source": {
+    "publisher": "Kenneth R. French Data Library",
+    "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+    "archive_sha256": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e",
+    "csv_sha256": "613b628c5ffa8b957e03ad3a4ccd891d3aa6daafc1801dffb7db7376f2017bdc",
+    "selected_returns_sha256": "fc2ad8ed3f443dd7d9d7485da0919ad1fd20fe50524128f687e2a4c8217013a7",
+    "header": "This file was created using the 202608 CRSP database.  It",
+    "months": 1080,
+    "first_month": "1927-01",
+    "last_month": "2016-12",
+    "input_unit": "percent per month",
+    "historical_vintage_certified": false
+  },
+  "acquisition": {
+    "started_at_utc": "2026-10-27T03:22:23.211897+00:00",
+    "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+    "protocol_sha256": "3e095e3029ec91b9af3ecbc90eeb52c50ac25070d47e1ca6f4e9119358ee1195",
+    "window_check": "passed",
+    "return_rows_read_before_protocol": false,
+    "http_status": 200,
+    "final_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+    "completed_at_utc": "2026-10-27T03:22:25.010290+00:00",
+    "bytes": 5600,
+    "sha256": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e"
+  },
+  "source_redistributed": false
+}

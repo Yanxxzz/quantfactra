@@ -1,0 +1,23 @@
+{
+  "schema": "quantfactra-published-factor-protocol-v1",
+  "case_id": "french-momentum-1927-2016-v1",
+  "selected_at_utc": "2026-10-27T03:19:44Z",
+  "selection": "Known published positive momentum anomaly, deliberately selected for an educational contrast; not a new discovery or an unbiased factor search.",
+  "window": {"start": "1927-01-01", "end": "2016-12-31"},
+  "expected_months": 1080,
+  "window_reason": "All 90 complete calendar years from the publisher's first month, ending before the repository's existing sealed windows. Fixed before downloading or inspecting return rows; no winning subperiod search.",
+  "sealed_windows": [{"start": "2017-09-20", "end": "2019-09-19"}, {"start": "2019-09-20", "end": "2021-09-17"}],
+  "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+  "definition_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html",
+  "formula": "Mom = 0.5 * (Small High + Big High) - 0.5 * (Small Low + Big Low), sorted on prior months 2 through 12; monthly reconstitution; publisher value-weighted portfolios.",
+  "execution_scope": "Replay of publisher-constructed monthly long-short factor returns. No stock-level signals, trades, bt engine, PandaAI Run, or investable account reconstruction.",
+  "index": "I[0]=1; I[t]=I[t-1]*(1+Mom[t]/100-drag_bps/10000). One unit long and one unit short per unit reference capital, 200% gross notional; the index is illustrative and excludes cash/collateral interest.",
+  "monthly_drag_bps": [0, 10, 25],
+  "cost_scope": "0 bps is the published gross factor. 10/25 bps are fixed monthly return deductions for sensitivity, NOT per-trade fees or estimates of executable net performance. Turnover, financing, borrow, market impact and tax are unavailable.",
+  "periods": [{"label": "full", "start": "1927-01", "end": "2016-12"}, {"label": "post_publication", "start": "1994-01", "end": "2016-12"}],
+  "post_publication_scope": "Calendar years after the 1993 Jegadeesh-Titman publication; current revised data and a known anomaly, not a clean out-of-sample test or a replication of that paper's exact strategy.",
+  "success_rule": "The full-period gross geometric annual return is positive; all fixed sensitivity scenarios and the later period remain visible regardless of outcome. This is historical positive evidence, not admission or future-return certification.",
+  "publication": "Publish derived statistics, annually sampled charts, protocol, code and hashes. Do not bundle or republish the source ZIP or monthly return rows under the software MIT license.",
+  "official_runs": 0,
+  "pool_admission": false
+}

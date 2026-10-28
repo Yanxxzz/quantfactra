@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "8f1deb8b32a12138c9d4b51205346ad271008326a2275c207b6f81113ab7ab6e",
+  "source_window": {
+    "start": "2011-10-03",
+    "end": "2016-12-30"
+  },
+  "existing_seal_check": "passed_before_fetch",
+  "retrieved_at": "2026-10-25T06:14:12.291096+00:00",
+  "url": "https://data-api.ecb.europa.eu/service/data/EXR/D.CHF+GBP+JPY+USD.EUR.SP00.A?startPeriod=2011-10-03&endPeriod=2016-12-30&format=csvdata",
+  "response_sha256": "46ce736de7e17d210acf8c2b5eb2646e7c3d7a545299c6d0bfc357482e36182e",
+  "rates_sha256": "3399b7d03dda29989960022341de5fe793b8519f0b32793c366de46eae494d8d",
+  "rows": 1347,
+  "observations": 5388,
+  "first_date": "2011-10-03",
+  "last_date": "2016-12-30",
+  "observation_statuses": [
+    "A",
+    "H"
+  ],
+  "transformation": "Reshaped exact received quote strings to date rows; no values rounded or filled",
+  "research_protocol_sha256": "120ae63085aa87a1c8a3751a698252db55998516cab19a70f46b4b5a680fbbdb",
+  "calendar_clarification_before_values": "Four received dates have H-status empty quotes; retain raw records and exclude only these current-date missing observations; no date-window/strategy/cost changes"
+}

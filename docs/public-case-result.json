@@ -1,0 +1,180 @@
+{
+  "case_id": "ecb-fx-momentum-v2",
+  "run_id": "bt-run-d005ad0e8134ef855f427960b85c3b4fc3b0883216b8ad6a0ede47f3e94b3495",
+  "engine": {
+    "name": "bt",
+    "version": "1.4.1",
+    "ffn": "1.4.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.11.11",
+    "adapter_lf_sha256": "e5a28da45087e19eee69215275865a0c85fd3135093d9f534cafce3dd25e5d99",
+    "backtest_count": 6
+  },
+  "engine_backtests": 6,
+  "ledger_jobs": 1,
+  "prices_sha256": "94036f5d2e5f843b2a2de95e66aeb9341f1fbdde7006908d44254536fb4f75ae",
+  "evaluation_dates": 1278,
+  "rebalance_dates": 256,
+  "primary_excess_total_return": -0.15843289753661793,
+  "source_status": "published_snapshot; historical_vintage_and_executable_quotes_unverified",
+  "pool_admission": false,
+  "report_delivery_verified": true,
+  "scope": "Actual local bt execution of the bundled ECB protocol; no website or model call",
+  "paths": [
+    {
+      "name": "group-1",
+      "cost_bps": 0,
+      "metrics": {
+        "total_return": 0.07094169843795606,
+        "annualized_return": 0.013826826850205087,
+        "max_drawdown": 0.18139659457366986,
+        "sharpe": 0.2058874262519268,
+        "turnover": 0.1019467662715352,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 0.0,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 1.1250449460931122e-09,
+          "fees": 0.0,
+          "equity": 2.3283064365386963e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": -1.77351466845721e-10,
+        "minimum_position": 0.0,
+        "self_funded": true
+      }
+    },
+    {
+      "name": "group-2",
+      "cost_bps": 0,
+      "metrics": {
+        "total_return": -0.0026695142663245575,
+        "annualized_return": -0.0005354264644970019,
+        "max_drawdown": 0.1255574722195778,
+        "sharpe": 0.026395253768057753,
+        "turnover": 0.10156465309053028,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 0.0,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 4.6497916628140956e-10,
+          "fees": 0.0,
+          "equity": 2.3283064365386963e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": -1.7644197214394808e-10,
+        "minimum_position": 0.0,
+        "self_funded": true
+      }
+    },
+    {
+      "name": "benchmark",
+      "cost_bps": 0,
+      "metrics": {
+        "total_return": 0.03738855907447558,
+        "annualized_return": 0.00738150880221955,
+        "max_drawdown": 0.14833055869578182,
+        "sharpe": 0.14708421647182385,
+        "turnover": 0.0020909208561640806,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 0.0,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 6.397158358595334e-10,
+          "fees": 0.0,
+          "equity": 2.3283064365386963e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": -2.0736479200422764e-10,
+        "minimum_position": 183858.1569495271,
+        "self_funded": true
+      }
+    },
+    {
+      "name": "group-1",
+      "cost_bps": 10,
+      "metrics": {
+        "total_return": -0.0596568617490828,
+        "annualized_return": -0.012248388085394746,
+        "max_drawdown": 0.20861876828718884,
+        "sharpe": -0.1083103970461987,
+        "turnover": 0.10170165152182474,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 118587.06239000807,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 1.4365468814503402e-09,
+          "fees": 4.547473508864641e-13,
+          "equity": 1.1641532182693481e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": 824.679870994587,
+        "minimum_position": 0.0,
+        "self_funded": true
+      }
+    },
+    {
+      "name": "group-2",
+      "cost_bps": 10,
+      "metrics": {
+        "total_return": -0.12386150499584991,
+        "annualized_return": -0.026145497506672055,
+        "max_drawdown": 0.21166370819264269,
+        "sharpe": -0.34704624255486066,
+        "turnover": 0.1013280800443533,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 121153.7724438819,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 1.0313669918105006e-09,
+          "fees": 4.547473508864641e-13,
+          "equity": 1.1641532182693481e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": 857.8113371883519,
+        "minimum_position": 0.0,
+        "self_funded": true
+      }
+    },
+    {
+      "name": "benchmark",
+      "cost_bps": 10,
+      "metrics": {
+        "total_return": 0.03457139254076802,
+        "annualized_return": 0.006832801608697148,
+        "max_drawdown": 0.14840721285038838,
+        "sharpe": 0.1386385460202499,
+        "turnover": 0.002085860188674702,
+        "turnover_unit": "mean per received evaluation date of gross traded notional / pre-trade equity"
+      },
+      "total_fees": 2659.387445559978,
+      "audit": {
+        "passed": true,
+        "max_errors": {
+          "cash": 7.635208021383733e-10,
+          "fees": 1.1368683772161603e-13,
+          "equity": 2.3283064365386963e-10
+        },
+        "absolute_tolerance": 0.0001,
+        "minimum_cash": 1800.0350198347087,
+        "minimum_position": 183118.22784157068,
+        "self_funded": true
+      }
+    }
+  ],
+  "defined_ic_observations": 255,
+  "undefined_correlation_dates": [
+    "2016-12-28"
+  ]
+}

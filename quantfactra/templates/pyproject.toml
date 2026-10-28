@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantfactra-local-adapter"
+version = "0.0.0"
+description = "Local editable QuantFactra adapter; rename before distributing"
+requires-python = ">=3.11,<3.13"
+
+[tool.setuptools]
+py-modules = ["my_backtest", "my_planner"]
