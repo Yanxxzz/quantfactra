@@ -2,7 +2,9 @@
 import hashlib
 from pathlib import Path
 import shutil
+import struct
 import zipfile
+import zlib
 
 import pytest
 from panda_alpha import __version__
@@ -93,3 +95,28 @@ def test_momentum_case_keeps_cost_risk_scope_and_does_not_redistribute_monthly_d
     assert '组合收益级' in page and '200%' in page and '不是逐笔交易成本' in page
     assert 'french-momentum-1927-2016-v1' in manifest['case_ids']
     assert not any(name.endswith(('.zip', '.csv')) or 'monthly-index' in name for name in manifest['files'])
+
+
+def test_approved_performance_image_has_no_metadata_or_companion_data(built):
+    root, manifest = built
+    path = 'assets/portfolio-performance.png'
+    assert [name for name in manifest['files'] if 'portfolio-performance' in name] == [path]
+    data = (root / path).read_bytes()
+    assert data[:8] == b'\x89PNG\r\n\x1a\n'
+    offset, chunks = 8, []
+    while offset < len(data):
+        length = struct.unpack('>I', data[offset:offset + 4])[0]
+        kind = data[offset + 4:offset + 8]
+        payload = data[offset + 8:offset + 8 + length]
+        crc = struct.unpack('>I', data[offset + 8 + length:offset + 12 + length])[0]
+        assert zlib.crc32(kind + payload) & 0xffffffff == crc
+        chunks.append(kind)
+        offset += length + 12
+        if kind == b'IEND':
+            break
+    assert offset == len(data), 'Trailing content is not approved'
+    assert chunks[0] == b'IHDR' and chunks[-1] == b'IEND'
+    assert set(chunks) == {b'IHDR', b'IDAT', b'IEND'}, 'Only pixel data is approved'
+    page = (root / 'index.html').read_text(encoding='utf-8')
+    assert 'id="performance"' in page and '非独立样本外验证' in page
+    assert page.count('src="' + path + '"') == 1

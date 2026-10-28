@@ -19,7 +19,7 @@
   <a class="brand" href="./"><img src="assets/favicon.svg" width="32" height="32" alt="">QuantFactra<span class="version">OPEN SOURCE</span></a>
   <div class="nav-tools">
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>导航 <span aria-hidden="true">＋</span></button>
-    <div class="nav-links" id="nav-links"><a href="#workflow">工作流</a><a href="#cases">公开案例</a><a href="@@REPO@@/blob/master/docs/quickstart.md">文档 ↗</a><a class="nav-github" href="@@REPO@@">GitHub <span aria-hidden="true">↗</span></a></div>
+    <div class="nav-links" id="nav-links"><a href="#workflow">工作流</a><a href="#performance">组合表现</a><a href="#cases">公开案例</a><a href="@@REPO@@/blob/master/docs/quickstart.md">文档 ↗</a><a class="nav-github" href="@@REPO@@">GitHub <span aria-hidden="true">↗</span></a></div>
     <button class="theme" type="button" aria-label="切换深浅主题" title="切换深浅主题"><span aria-hidden="true">◐</span></button>
   </div>
 </nav></header>
@@ -32,7 +32,7 @@
         <h1 id="hero-title">让量化研究，<br><em>有据可循。</em></h1>
         <p class="hero-copy">用你的 AI，接你的回测平台。<br>从因子想法到复现报告，保留每一步证据。</p>
         <p class="hero-audience">为搭建、修改量化研究 Agent 的开发者而作。</p>
-        <div class="actions"><a class="button primary" href="#start">开始本地研究 <span aria-hidden="true">↗</span></a><a class="button hero-secondary" href="#cases">查看两个案例 <span aria-hidden="true">→</span></a></div>
+        <div class="actions"><a class="button primary" href="#start">开始本地研究 <span aria-hidden="true">↗</span></a><a class="button hero-secondary" href="#performance">查看组合表现 <span aria-hidden="true">→</span></a></div>
         <div class="hero-note"><span>MIT 开源</span><span>首个案例无需账户或模型 key</span></div>
       </div>
       <div class="hero-visual">
@@ -69,6 +69,13 @@
     <div class="workflow-layout"><div class="workflow-notes"><article><span class="step-index">A</span><h3>想法与数据进入</h3><p>AI 提出研究假设，数据与本地核算提供输入。</p></article><article><span class="step-index">B</span><h3>工作流连接过程</h3><p>固定定义，记录任务与费用，保留报告和独立复核证据。</p></article><article><span class="step-index">C</span><h3>适配器连接执行</h3><p>按平台自己的语言回测，再把结果带回同一个实验。</p></article></div><div class="diagram-card"><div class="diagram-caption"><span>QUANTFACTRA / SYSTEM MAP</span><a href="architecture/">交互版 ↗</a></div><img src="assets/quantfactra-architecture.svg" width="940" height="628" alt="AI 与数据进入研究工作流，工作流管理实验记录和检查，通过适配器连接 PandaAI、bt 或自定义平台" loading="lazy"></div></div>
     <p class="caption workflow-caption">平台按配置选择。模型协议已用本地服务测试；真实供应商账户、模型输出质量与新平台需要分别验收。</p>
   </div></section>
+  <section class="wrap cases-section" id="performance" aria-labelledby="performance-title">
+    <div class="section-head"><div><div class="eyebrow">RESEARCH SNAPSHOT / PERFORMANCE ONLY</div><h2 id="performance-title">一张图，<br>同时看收益与回撤。</h2></div><p class="section-summary">匿名五因子组合 · 完整历史区间<br>单边 50bp 模拟交易费用</p></div>
+    <figure>
+      <div class="diagram-card"><a href="assets/portfolio-performance.png" aria-label="打开完整五因子组合回测图"><img src="assets/portfolio-performance.png" width="2160" height="1584" loading="lazy" alt="五因子组合2025年8月15日至2026年9月3日的历史净值与回撤；单边50bp模拟费用后累计净收益33.09%，最大回撤19.82%。非实盘、非独立样本外验证。"></a></div>
+      <figcaption class="caption comparison-note">历史数据已参与研究选择，未完成独立样本外验证及完整时点数据认证。仅为获准展示的结果图片，不提供策略、逐日数据或研究过程；非官网比赛成绩，不代表未来收益。</figcaption>
+    </figure>
+  </section>
   <section class="wrap cases-section" id="cases" aria-labelledby="case-title">
     <div class="section-head"><div><div class="eyebrow">03 / TWO CASES. OPEN EVIDENCE.</div><h2 id="case-title">正收益与失败假说，<br>都交给证据说话。</h2></div><p class="section-summary">从一份公开结果出发，<br>理解如何复现和核对研究。</p></div>
     <div class="case-pair">

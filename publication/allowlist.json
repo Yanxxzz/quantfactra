@@ -1,6 +1,6 @@
 {
   "schema": "quantfactra-public-allowlist-v1",
-  "scope": "Reusable framework, synthetic fixtures and explicitly public examples only",
+  "scope": "Reusable framework, synthetic fixtures, explicitly public examples and one owner-approved anonymous performance PNG only",
   "files": {
     ".gitattributes": {
       "classification": "configuration",
@@ -32,7 +32,7 @@
     },
     "AGENTS.md": {
       "classification": "documentation",
-      "sha256": "a77292da946161a2ae8b53e82c250dc433ea075a7bd5e3c3435830d83d28fad8"
+      "sha256": "8c85783f2ac3dee081caf2190f76948484dc6e80b2d9f543446f2868dc06f470"
     },
     "CHANGELOG.md": {
       "classification": "documentation",
@@ -52,7 +52,7 @@
     },
     "README.md": {
       "classification": "documentation",
-      "sha256": "80fae6ef0f4e7cd64dd1411f1a3d0fcd5ce9ce11ed2ec094b4c5572f49c74395"
+      "sha256": "07612183d4b49c4c14b237351538db8adf4c82e6941c2e53320392c81e69ba6b"
     },
     "README_EN.md": {
       "classification": "documentation",
@@ -120,7 +120,7 @@
     },
     "docs/publication.md": {
       "classification": "documentation",
-      "sha256": "cb163e653c162df2b717a1585b4e50413af82842b3e35a15ffe7a0731f24fa3c"
+      "sha256": "b5b9c342ad9d52fc5229914fd0f0179fcd0b6830dc7cdcb1a7e9f2b1d2c60087"
     },
     "docs/published-momentum-case.md": {
       "classification": "documentation",
@@ -424,7 +424,7 @@
     },
     "scripts/build_site.py": {
       "classification": "publication_control",
-      "sha256": "678f45abec13ca84bffd2cf7ffbe8038da464d373ef8e3aaa2244f2c66fdad78"
+      "sha256": "269fbf29a18bae25c90bf3f1080e5f77dad330d36bedfdd43c4fef09947756de"
     },
     "scripts/check_publication.py": {
       "classification": "publication_control",
@@ -456,7 +456,7 @@
     },
     "tests/test_public_site.py": {
       "classification": "synthetic_test",
-      "sha256": "7fbc94c4d2774a2b112735f3df9333888f304649d1c6ffa9f4f39e957f40c670"
+      "sha256": "19e6444aa48bd0fdf5285014c22420e53ad9e7d738b677603da6f01d19926fe2"
     },
     "tests/test_publication_boundary.py": {
       "classification": "synthetic_test",
@@ -506,6 +506,10 @@
       "classification": "site_asset",
       "sha256": "148ca0beb6787e7c86534a0bf2314c88db756b876af06531f3b226083187ffba"
     },
+    "website/assets/portfolio-performance.png": {
+      "classification": "site_asset",
+      "sha256": "d752f0645cc064dbc3d0080226cef9143f70130943f1be3cbd1eebdadfb5677a"
+    },
     "website/assets/site.css": {
       "classification": "site_asset",
       "sha256": "4cabb4b2ca8ee6b0b75020425698191e2f83665d2b45e31eece1dd85d6631ea5"
@@ -528,7 +532,7 @@
     },
     "website/index.html": {
       "classification": "site_asset",
-      "sha256": "697b0301ddc60e4159e3220be5bb62cada6676c45b241632726dfbb0eef784b7"
+      "sha256": "f807b2e05e2ff828190f7104832154cdbbf36de3c0dfb40b78f377c686a56aa5"
     },
     "website/momentum.html": {
       "classification": "site_asset",

@@ -26,6 +26,7 @@ PUBLIC_FILES = {
     "website/assets/favicon.svg": "assets/favicon.svg",
     "website/assets/social-card.png": "assets/social-card.png",
     "website/assets/social-card.svg": "assets/social-card.svg",
+    "website/assets/portfolio-performance.png": "assets/portfolio-performance.png",
     "docs/assets/quantfactra-architecture.svg": "assets/quantfactra-architecture.svg",
     "docs/assets/fx-case-nav.svg": "assets/fx-case-nav.svg",
     "docs/assets/french-momentum.svg": "assets/french-momentum.svg",
@@ -187,6 +188,7 @@ def build(output, *, revision="master", root=ROOT):
         "Source: European Central Bank. Free source and reuse terms: case/data/DATA_NOTICE.md\n"
         "Second case: momentum/index.html. Published Kenneth French portfolio-return replay, not stock-level backtesting.\n"
         "Original monthly French data is NOT bundled; download from the publisher. See momentum/data/DATA_NOTICE.md.\n"
+        "The home page also displays one owner-approved anonymous performance PNG; no strategy or source series is bundled.\n"
         "Software: MIT; upstream QUANTAXIS attribution retained in LICENSE.txt.\n"
         "Architecture renderer: architecture/ARCHIFY_LICENSE.txt.\n" + REPO + "\n", encoding="utf-8", newline="\n")
     validate_site(output)
@@ -195,7 +197,7 @@ def build(output, *, revision="master", root=ROOT):
              if p.is_file()}
     manifest = {"schema": "quantfactra-public-site-v1", "version": version, "revision": revision,
                 "case_id": result["case_id"], "case_run_id": result["run_id"], "case_ids": [result["case_id"], momentum["case_id"]], "files": files,
-                "scope": "Explicit public assets only; no local runtime, credentials or private research"}
+                "scope": "Explicit public assets and one owner-approved performance PNG; no private source data, strategy, runtime or credentials"}
     (output / "site-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     return manifest
 
